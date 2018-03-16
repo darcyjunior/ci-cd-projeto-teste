@@ -27,7 +27,7 @@ describe('Pages', () => {
     const res = {
       send: sinon.spy()
     }
-    pages.page2(req, res)
+    pages.page1(req, res)
     expect(res.send.calledOnce).to.be.true
     expect(res.send.calledWith('Page2')).to.be.true
   })
